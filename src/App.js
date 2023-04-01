@@ -1,10 +1,19 @@
 import React, { useEffect } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { Box, Typography } from "@mui/material";
+
+import { MenuLayout } from "./components/Layouts";
+import { ListBeds } from "./components/Display";
 
 const theme = createTheme({
   typography: {
     fontFamily: ["Montserrat"].join(","),
+    body1: {
+      fontFamily: "Montserrat",
+      fontStyle: "normal",
+      fontWeight: 500,
+      fontSize: "1rem",
+      lineHeight: "125%",
+    },
   },
 });
 
@@ -14,9 +23,9 @@ function App() {
   }, []);
   return (
     <ThemeProvider theme={theme}>
-      <Box>
-        <Typography>Hello</Typography>
-      </Box>
+      <MenuLayout>
+        <ListBeds />
+      </MenuLayout>
     </ThemeProvider>
   );
 }
