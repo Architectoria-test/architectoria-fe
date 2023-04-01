@@ -1,0 +1,13 @@
+.bottom-menu-paper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-menu-paper.MuiPaper-root {
+  box-shadow: 0px 0px 6px rgba(38, 52, 117, 0.16);
+}
+
+.bottom-menu-paper-button {
+  font-size: medium;
+}
