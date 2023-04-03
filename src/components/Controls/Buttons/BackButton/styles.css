@@ -1,0 +1,7 @@
+.back-btn.MuiButton-root {
+  width: 100%;
+  text-transform: none;
+  color: #000000;
+  justify-content: start;
+  padding: 0;
+}
